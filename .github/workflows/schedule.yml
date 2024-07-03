@@ -1,22 +1,22 @@
-name: Run Python Script
+# name: Run Python Script
 
-on:
-  schedule:
-    - cron: '0 * * * *'  # Executa a cada hora
-  push:
-    branches:
-      - main
-  workflow_dispatch:  # Permite execução manual
+# on:
+#   schedule:
+#     - cron: '0 * * * *'  # Executa a cada hora
+#   push:
+#     branches:
+#       - main
+#   workflow_dispatch:  # Permite execução manual
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-      - name: Run script
-        run: python script.py
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: Set up Python
+#         uses: actions/setup-python@v2
+#         with:
+#           python-version: '3.x'
+#       - name: Run script
+#         run: python script.py
